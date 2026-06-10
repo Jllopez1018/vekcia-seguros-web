@@ -67,6 +67,37 @@ export default function Hero() {
                 </h2>
 
                 <p>{slide.subtitle}</p>
+
+   <a
+                  href="#servicios"
+                  className="
+                    inline-flex
+                    items-center
+                    px-6
+                    py-3
+                    mt-5
+                    rounded-full
+                    bg-slate-900
+                    text-white
+                    font-semibold
+                    hover:bg-slate-800
+                    transition
+                  "
+                >
+                  Conocer más
+
+                  <span
+                    className="
+                      transition-transform
+                      duration-300
+                      group-hover:translate-x-2
+                    "
+                  >
+                    →
+                  </span>
+
+                </a>
+                
               </div>
             </div>
           </SwiperSlide>
