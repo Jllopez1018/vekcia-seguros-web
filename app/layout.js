@@ -7,8 +7,24 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: 'VEKCIA Seguros',
-  description: 'Landing Page Next.js'
+  title: 'VEKCIA Seguros | Protección para Autos, Flotillas y Transporte',
+  description:
+    'Especialistas en seguros para autos, flotillas, tráileres y transporte de carga. Comparamos las mejores aseguradoras para ofrecerte la cobertura ideal para proteger tu patrimonio, operación y tranquilidad.',
+  keywords: [
+    'seguros',
+    'seguro de auto',
+    'seguro para flotillas',
+    'seguro para trailers',
+    'seguro de transporte',
+    'seguro empresarial',
+    'seguro de carga',
+    'qualitas',
+    'gnp',
+    'hdi',
+    'atlas',
+    'chubb',
+    'vekcia seguros'
+  ]
 }
 
 export default function RootLayout({ children }) {
