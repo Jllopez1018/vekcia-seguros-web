@@ -133,7 +133,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="https://group.vekcia.com"
+                  href="https://vekcia.com"
                   target="_blank"
                   className="hover:text-white transition-colors"
                 >
