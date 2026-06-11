@@ -24,7 +24,12 @@ export const metadata = {
     'atlas',
     'chubb',
     'vekcia seguros'
-  ]
+  ],
+  icons: {
+    icon: "/logos/logo-fav.png",
+    shortcut: "/logos/logo-fav.png",
+    apple: "/logos/logo-fav.png",
+  }
 }
 
 export default function RootLayout({ children }) {
