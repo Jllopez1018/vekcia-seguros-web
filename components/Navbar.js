@@ -6,62 +6,102 @@ import { Menu, X } from "lucide-react";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
+  const closeMenu = () => setOpen(false);
+
   return (
-    <nav className="bg-[var(--vekcia-bg)] sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4">
+    <nav className="sticky top-0 z-50 bg-[var(--vekcia-bg)]">
+      <div className="max-w-7xl mx-auto px-6">
 
         <div className="flex items-center justify-between h-16">
 
           {/* Logo */}
-          <div className="flex items-center gap-3">
-
+          <a href="/" className="flex items-center">
             <img
-              src="/logos/logo-texto.png"
-              alt="VEKCIA"
-              className="h-10 w-auto"
+              src="/logos/logo.png"
+              alt="VEKCIA Seguros"
+              className="h-12 w-auto"
             />
+          </a>
 
-            <span
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-8">
+
+            <ul className="flex items-center gap-8 text-white font-semibold">
+
+              <li>
+                <a
+                  href="#nosotros"
+                  className="transition-opacity hover:opacity-70"
+                >
+                  Nosotros
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#servicios"
+                  className="transition-opacity hover:opacity-70"
+                >
+                  Protección
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#como-trabajamos"
+                  className="transition-opacity hover:opacity-70"
+                >
+                  Cómo trabajamos
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#empresas"
+                  className="transition-opacity hover:opacity-70"
+                >
+                  Empresas
+                </a>
+              </li>
+
+              {/* <li>
+                <a
+                  href="#contacto"
+                  className="transition-opacity hover:opacity-70"
+                >
+                  Contacto
+                </a>
+              </li> */}
+
+            </ul>
+
+            {/* CTA */}
+            {/* <a
+              href="#contacto"
               className="
-                hidden
-                sm:block
-                text-lg
+                inline-flex items-center justify-center
+                px-5 py-2.5
+                rounded-full
+                bg-white
+                text-[var(--vekcia-blue)]
                 font-bold
-                uppercase
-                tracking-[0.25em]
-                text-slate-200
+                transition-all
+                hover:bg-[var(--vekcia-blue)]
+                hover:text-white
               "
             >
-              Seguros
-            </span>
+              Solicitar asesoría
+            </a> */}
 
           </div>
 
-          {/* Desktop */}
-          <ul className="hidden md:flex items-center gap-10 text-white font-semibold">
-            <li>
-              <a href="#nosotros" className="hover:opacity-80">
-                Nosotros
-              </a>
-            </li>
-
-            <li>
-              <a href="#metas" className="hover:opacity-80">
-                Protección
-              </a>
-            </li>
-
-            <li>
-              <a href="#servicios" className="hover:opacity-80">
-                Servicios
-              </a>
-            </li>
-          </ul>
-
           {/* Mobile Button */}
           <button
+            type="button"
             onClick={() => setOpen(!open)}
             className="md:hidden text-white"
+            aria-label={open ? "Cerrar menú" : "Abrir menú"}
+            aria-expanded={open}
           >
             {open ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -74,13 +114,17 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden bg-[var(--vekcia-bg)] border-t border-white/10">
 
-          <ul className="flex flex-col py-4">
+          <ul className="flex flex-col py-3">
 
             <li>
               <a
                 href="#nosotros"
-                onClick={() => setOpen(false)}
-                className="block px-6 py-3 text-white"
+                onClick={closeMenu}
+                className="
+                  block px-6 py-3
+                  text-white font-medium
+                  hover:bg-white/10
+                "
               >
                 Nosotros
               </a>
@@ -88,23 +132,77 @@ export default function Navbar() {
 
             <li>
               <a
-                href="#metas"
-                onClick={() => setOpen(false)}
-                className="block px-6 py-3 text-white"
+                href="#servicios"
+                onClick={closeMenu}
+                className="
+                  block px-6 py-3
+                  text-white font-medium
+                  hover:bg-white/10
+                "
               >
-                Metas
+                Protección
               </a>
             </li>
 
             <li>
               <a
-                href="#servicios"
-                onClick={() => setOpen(false)}
-                className="block px-6 py-3 text-white"
+                href="#como-trabajamos"
+                onClick={closeMenu}
+                className="
+                  block px-6 py-3
+                  text-white font-medium
+                  hover:bg-white/10
+                "
               >
-                Servicios
+                Cómo trabajamos
               </a>
             </li>
+
+            <li>
+              <a
+                href="#empresas"
+                onClick={closeMenu}
+                className="
+                  block px-6 py-3
+                  text-white font-medium
+                  hover:bg-white/10
+                "
+              >
+                Empresas
+              </a>
+            </li>
+
+            {/* <li>
+              <a
+                href="#contacto"
+                onClick={closeMenu}
+                className="
+                  block px-6 py-3
+                  text-white font-medium
+                  hover:bg-white/10
+                "
+              >
+                Contacto
+              </a>
+            </li>
+
+            <li className="px-6 pt-3">
+              <a
+                href="#contacto"
+                onClick={closeMenu}
+                className="
+                  flex items-center justify-center
+                  w-full
+                  px-5 py-3
+                  rounded-full
+                  bg-white
+                  text-[var(--vekcia-blue)]
+                  font-bold
+                "
+              >
+                Solicitar asesoría
+              </a>
+            </li> */}
 
           </ul>
 

@@ -37,71 +37,46 @@ export default function Hero() {
             >
               <div className="hero-overlay" />
 
-              <div className="hero-content-card">
-                <span
-                  className="
-                  inline-block
-                  mb-4
-                  text-xs
-                  font-semibold
-                  uppercase
-                  tracking-[0.25em]
-                  text-[var(--vekcia-bg)]
-                "
-                >
+              <div className="hero-content">
+                <span className="hero-kicker">
                   VEKCIA SEGUROS
                 </span>
 
-                <h2
-                  className="
-                    text-4xl
-                    lg:text-5xl
-                    font-black
-                    tracking-tight
-                    leading-[1]
-                    text-[#081221]
-                    mb-8
-                  "
-                >
+                <h2 className="hero-title">
                   {slide.title}
                 </h2>
 
-                <p>{slide.subtitle}</p>
+                <p className="hero-subtitle">
+                  {slide.subtitle}
+                </p>
 
-   <a
-                  href="#servicios"
-                  className="
-                    inline-flex
-                    items-center
-                    px-6
-                    py-3
-                    mt-5
-                    rounded-full
-                    bg-slate-900
-                    text-white
-                    font-semibold
-                    hover:bg-slate-800
-                    transition
-                  "
-                >
-                  Conocer más
+ <a
+  href="#servicios"
+  className="
+    inline-flex
+    items-center
+    gap-3
+    px-6
+    py-3
+    mt-5
+    rounded-lg
+    bg-[var(--vekcia-green)]
+    text-white
+    font-semibold
+    hover:brightness-95
+    transition-all
+    duration-300
+  "
+>
+  Conocer más
 
-                  <span
-                    className="
-                      transition-transform
-                      duration-300
-                      group-hover:translate-x-2
-                    "
-                  >
-                    →
-                  </span>
-
-                </a>
-                
-              </div>
+  <span className="text-lg leading-none transition-transform duration-300">
+    →
+  </span>
+</a>
+             </div>
             </div>
           </SwiperSlide>
-
         ))}
       </Swiper>
     </section>

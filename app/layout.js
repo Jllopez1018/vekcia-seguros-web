@@ -4,38 +4,46 @@ import "./globals.css";
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata = {
-  title: 'VEKCIA Seguros | Protección para Autos, Flotillas y Transporte',
+  title: "VEKCIA Seguros | Protección para Personas y Empresas",
+
   description:
-    'Especialistas en seguros para autos, flotillas, tráileres y transporte de carga. Comparamos las mejores aseguradoras para ofrecerte la cobertura ideal para proteger tu patrimonio, operación y tranquilidad.',
+    "Soluciones de seguros para personas, familias y empresas. Protección para autos, flotillas, transporte de carga, patrimonio, gastos médicos y viajes.",
+
   keywords: [
-    'seguros',
-    'seguro de auto',
-    'seguro para flotillas',
-    'seguro para trailers',
-    'seguro de transporte',
-    'seguro empresarial',
-    'seguro de carga',
-    'qualitas',
-    'gnp',
-    'hdi',
-    'atlas',
-    'chubb',
-    'vekcia seguros'
+    "VEKCIA Seguros",
+    "seguros",
+    "seguro de auto",
+    "seguro para flotillas",
+    "seguro de transporte",
+    "seguro de carga",
+    "seguros empresariales",
+    "seguros patrimoniales",
+    "gastos médicos",
+    "seguro de viaje",
   ],
+
   icons: {
     icon: "/logos/logo-fav.png",
     shortcut: "/logos/logo-fav.png",
     apple: "/logos/logo-fav.png",
-  }
-}
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body>{children}</body>
+      <body className={montserrat.className}>
+        {children}
+      </body>
     </html>
-  )
+  );
 }

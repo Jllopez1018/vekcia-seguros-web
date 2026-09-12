@@ -38,17 +38,21 @@ const aseguradoras = [
   },
 ];
 
-const logos = [...aseguradoras]
-  .sort((a, b) => a.order - b.order);
+const logos = [...aseguradoras].sort(
+  (a, b) => a.order - b.order
+);
 
 export default function Partners() {
   return (
     <section
+      id="partners"
       className="
         bg-white
-        py-32
+        py-24
+        lg:py-28
         overflow-hidden
       "
+      data-aos="fade-up"
     >
       <div
         className="
@@ -60,7 +64,7 @@ export default function Partners() {
 
         {/* Header */}
 
-        <div className="text-center mb-20">
+        <div className="text-center mb-16 lg:mb-18">
 
           <span
             className="
@@ -69,14 +73,14 @@ export default function Partners() {
               rounded-full
               px-5
               py-2.5
-              text-sm
+              text-xs
               font-semibold
-              tracking-[0.2em]
+              tracking-[0.25em]
               uppercase
-              bg-slate-100
+              bg-emerald-50
               border
-              border-slate-200
-              text-slate-700
+              border-emerald-100
+              text-[var(--vekcia-green)]
             "
           >
             Principales Aseguradoras
@@ -84,24 +88,33 @@ export default function Partners() {
 
           <h2
             className="
-              mt-8
+              mt-7
               text-5xl
-              lg:text-6xl
-              font-bold
-              text-slate-900
+              md:text-6xl
+              lg:text-7xl
+              font-black
+              tracking-[-0.04em]
+              leading-[0.95]
+              text-[#081221]
+              max-w-5xl
+              mx-auto
             "
           >
-            Trabajamos con las aseguradoras líderes del mercado
+            Trabajamos con las
+            <span className="block text-[var(--vekcia-blue)]">
+              aseguradoras líderes
+            </span>
           </h2>
 
           <p
             className="
-              mt-8
-              text-xl
+              mt-7
+              text-lg
+              lg:text-xl
               text-slate-600
               max-w-4xl
               mx-auto
-              leading-9
+              leading-8
             "
           >
             Comparamos opciones entre distintas compañías para
@@ -111,7 +124,7 @@ export default function Partners() {
 
         </div>
 
-        {/* Slider */}
+        {/* Logos */}
 
         <div className="partners-slider">
 
@@ -131,21 +144,6 @@ export default function Partners() {
 
           </div>
 
-        </div>
-
-        {/* Footer */}
-
-        <div
-          className="
-            border-t
-            border-slate-200
-            pt-10
-            mt-24
-            text-center            
-          "
-        >
-
-         
         </div>
 
       </div>

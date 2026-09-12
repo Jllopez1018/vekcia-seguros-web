@@ -1,97 +1,115 @@
 import Image from "next/image";
 
 export default function Servicios() {
-const servicios = [
-  {
-    id: 1,
-    numero: "01",
-    type:"Seguro de Daños",
-    image: "/images/servicios/autos.jpg",
-    title: "Autos y Flotillas Vehiculares",
-    description:
-      "Protegemos vehículos particulares, flotillas empresariales, autos utilitarios y unidades de renta mediante coberturas diseñadas para reducir riesgos y brindar tranquilidad tanto a personas como a empresas.",
-    bullets: [
-      "Autos particulares",
-      "Flotillas empresariales",
-      "Vehículos utilitarios",
-      "Autos de renta",
-      "Responsabilidad Civil",
-      "Daños Materiales",
-    ],
-  },
+  const servicios = [
+    {
+      id: 1,
+      numero: "01",
+      type: "Seguro de Daños",
+      image: "/images/servicios/autos.jpg",
+      title: "Autos y Flotillas Vehiculares",
+      description:
+        "Protegemos vehículos particulares, flotillas empresariales, autos utilitarios y unidades de renta mediante coberturas diseñadas para reducir riesgos y brindar tranquilidad tanto a personas como a empresas.",
+      bullets: [
+        "Autos particulares",
+        "Flotillas empresariales",
+        "Vehículos utilitarios",
+        "Autos de renta",
+        "Responsabilidad Civil",
+        "Daños Materiales",
+      ],
+    },
 
-  {
-    id: 2,
-    numero: "02",
-    type:"Seguro de Daños",
-    image: "/images/servicios/trailers.jpg",
-    title: "Transporte de Carga y Logística",
-    description:
-      "Soluciones especializadas para empresas transportistas y operadores logísticos. Protegemos tractocamiones, remolques, camiones de carga y unidades comerciales que forman parte de la cadena de suministro.",
-    bullets: [
-      "Flotillas de tráileres",
-      "Tractocamiones",
-      "Camiones 3½ toneladas",
-      "Transporte de carga",
-      "Logística y distribución",
-      "Equipo pesado",
-    ],
-  },
+    {
+      id: 2,
+      numero: "02",
+      type: "Seguro de Daños",
+      image: "/images/servicios/trailers.jpg",
+      title: "Transporte de Carga y Logística",
+      description:
+        "Soluciones especializadas para empresas transportistas y operadores logísticos. Protegemos tractocamiones, remolques, camiones de carga y unidades comerciales que forman parte de la cadena de suministro.",
+      bullets: [
+        "Flotillas de tráileres",
+        "Tractocamiones",
+        "Camiones 3½ toneladas",
+        "Transporte de carga",
+        "Logística y distribución",
+        "Equipo pesado",
+      ],
+    },
 
-  {
-    id: 3,
-    numero: "03",
-    type:"Seguro de Daños",
-    image: "/images/servicios/general.png",
-    title: "Vehículos Especializados",
-    description:
-      "Ofrecemos protección para unidades de uso especial y operaciones específicas, adaptando las coberturas a las necesidades de cada actividad comercial o recreativa.",
-    bullets: [
-      "Motocicletas",
-      "RZR y UTV",
-      "Grúas de asistencia vial",
-      "Camiones de reparto",
-      "Vehículos comerciales",
-      "Unidades especiales",
-    ],
-  },
+    {
+      id: 3,
+      numero: "03",
+      type: "Seguro de Daños",
+      image: "/images/servicios/general.png",
+      title: "Vehículos Especializados",
+      description:
+        "Ofrecemos protección para unidades de uso especial y operaciones específicas, adaptando las coberturas a las necesidades de cada actividad comercial o recreativa.",
+      bullets: [
+        "Motocicletas",
+        "RZR y UTV",
+        "Grúas de asistencia vial",
+        "Camiones de reparto",
+        "Vehículos comerciales",
+        "Unidades especiales",
+      ],
+    },
 
-  {
-    id: 4,
-    numero: "04",
-    type:"Seguro de Daños",
-    image: "/images/servicios/patrimonial.jpg",
-    title: "Seguros Patrimoniales",
-    description:
-      "Protegemos negocios, obras de construcción y propiedades contra eventos que puedan afectar la continuidad de las operaciones o generar pérdidas económicas importantes.",
-    bullets: [
-      "Negocios",
-      "Locales comerciales",
-      "Casa habitación",
-      "Obras en construcción",
-      "Contenido e inventario",
-      "Responsabilidad Civil",
-    ],
-  },
+    {
+      id: 4,
+      numero: "04",
+      type: "Seguro de Daños",
+      image: "/images/servicios/patrimonial.jpg",
+      title: "Seguros Patrimoniales",
+      description:
+        "Protegemos negocios, obras de construcción y propiedades contra eventos que puedan afectar la continuidad de las operaciones o generar pérdidas económicas importantes.",
+      bullets: [
+        "Negocios",
+        "Locales comerciales",
+        "Casa habitación",
+        "Obras en construcción",
+        "Contenido e inventario",
+        "Responsabilidad Civil",
+      ],
+    },
 
-  {
-    id: 5,
-    numero: "05",
-    type:"Seguro de Salud",
-    image: "/images/servicios/medical.jpg",
-    title: "Gastos Médicos y Protección Familiar",
-    description:
-      "Acceso a soluciones de salud y protección financiera para individuos, familias y empresas, respaldadas por aseguradoras líderes del mercado.",
-    bullets: [
-      "Gastos Médicos Mayores",
-      "Seguro de Salud",
-      "Protección Familiar",
-      "Cobertura Hospitalaria",
-      "Accidentes Personales",
-      "Planes Empresariales",
-    ],
-  },
-];
+    {
+      id: 5,
+      numero: "05",
+      type: "Seguro de Salud",
+      image: "/images/servicios/medical.jpg",
+      title: "Gastos Médicos y Protección Familiar",
+      description:
+        "Acceso a soluciones de salud y protección financiera para individuos, familias y empresas, respaldadas por aseguradoras líderes del mercado.",
+      bullets: [
+        "Gastos Médicos Mayores",
+        "Seguro de Salud",
+        "Protección Familiar",
+        "Cobertura Hospitalaria",
+        "Accidentes Personales",
+        "Planes Empresariales",
+      ],
+    },
+
+    {
+      id: 6,
+      numero: "06",
+      type: "Seguro de Personas",
+      image: "/images/servicios/viaje.jpg",
+      title: "Seguros de Viaje",
+      description:
+        "Viaja con la tranquilidad de contar con protección ante imprevistos durante tu recorrido, con opciones de cobertura para disfrutar tu viaje con mayor seguridad y respaldo.",
+      bullets: [
+        "Asistencia médica",
+        "Accidentes durante el viaje",
+        "Gastos médicos",
+        "Asistencia en viaje",
+        "Pérdida de equipaje",
+        "Cancelación de viaje",
+      ],
+    },
+  ];
 
   return (
     <section
@@ -120,7 +138,6 @@ const servicios = [
               border-emerald-200
               text-emerald-700
               mb-8
-              mb-8
             "
           >
             Seguros Especializados
@@ -148,8 +165,11 @@ const servicios = [
               max-w-4xl
             "
           >
-            Ofrecemos soluciones aseguradoras para vehículos, transporte de carga, negocios, propiedades y salud, respaldadas por las principales 
-            compañías del mercado y acompañadas de asesoría especializada.          </p>
+            Ofrecemos soluciones aseguradoras para vehículos, transporte de
+            carga, negocios, propiedades, salud y viajes, respaldadas por las
+            principales compañías del mercado y acompañadas de asesoría
+            especializada.
+          </p>
 
         </div>
 
@@ -157,9 +177,24 @@ const servicios = [
         <div className="space-y-28">
 
           {servicios.map((servicio, index) => (
+
             <div
               key={servicio.id}
+              id={
+                servicio.id === 1
+                  ? "autos-flotillas"
+                  : servicio.id === 2
+                  ? "transporte-carga"
+                  : servicio.id === 3
+                  ? "vehiculos-especializados"
+                  : servicio.id === 4
+                  ? "seguros-patrimoniales"
+                  : servicio.id === 5
+                  ? "gastos-medicos"
+                  : "seguros-viaje"
+              }
               className="
+                scroll-mt-20
                 grid
                 lg:grid-cols-[1.15fr_0.85fr]
                 gap-16
@@ -168,14 +203,13 @@ const servicios = [
             >
 
               {/* Imagen */}
-              {/* Imagen */}
-                <div
+              <div
                 className={`
-                    ${index % 2 !== 0 ? "lg:order-2" : ""}
+                  ${index % 2 !== 0 ? "lg:order-2" : ""}
                 `}
-                >
+              >
                 <div
-                    className="
+                  className="
                     relative
                     h-[550px]
                     rounded-[36px]
@@ -184,38 +218,36 @@ const servicios = [
                     border
                     border-slate-200
                     group
-                    "
+                  "
                 >
 
-                    <Image
+                  <Image
                     src={servicio.image}
                     alt={servicio.title}
                     fill
                     className="
-                        object-cover
-                        transition-transform
-                        duration-700
-                        group-hover:scale-105
+                      object-cover
+                      transition-transform
+                      duration-700
+                      group-hover:scale-105
                     "
                     sizes="(max-width: 1024px) 100vw, 50vw"
-                    />
+                  />
 
-                    {/* Overlay suave */}
-                    <div
+                  {/* Overlay suave */}
+                  <div
                     className="
-                        absolute
-                        inset-0
-                        bg-gradient-to-t
-                        from-slate-900/20
-                        via-transparent
-                        to-transparent
+                      absolute
+                      inset-0
+                      bg-gradient-to-t
+                      from-slate-900/20
+                      via-transparent
+                      to-transparent
                     "
-                    />
-
-                   
+                  />
 
                 </div>
-                </div>
+              </div>
 
               {/* Contenido */}
               <div
@@ -223,19 +255,20 @@ const servicios = [
                   ${index % 2 !== 0 ? "lg:order-1" : ""}
                 `}
               >
-              <span
-                className="
-                  inline-block
-                  text-xs
-                  font-bold
-                  tracking-[0.2em]
-                  uppercase
-                  text-[var(--vekcia-bg)]
-                  mb-4
-                "
-              >
-                {servicio.type}
-              </span>
+
+                <span
+                  className="
+                    inline-block
+                    text-xs
+                    font-bold
+                    tracking-[0.2em]
+                    uppercase
+                    text-[var(--vekcia-green)]
+                    mb-4
+                  "
+                >
+                  {servicio.type}
+                </span>
 
                 <h3
                   className="
@@ -251,15 +284,15 @@ const servicios = [
                   {servicio.title}
                 </h3>
 
-<div
-  className="
-    w-24
-    h-1
-    bg-[var(--vekcia-bg)]
-    rounded-full
-    my-6
-  "
-/>
+                <div
+                  className="
+                    w-24
+                    h-1
+                    bg-[var(--vekcia-green)]
+                    rounded-full
+                    my-6
+                  "
+                />
 
                 <p
                   className="
@@ -298,6 +331,7 @@ const servicios = [
               </div>
 
             </div>
+
           ))}
 
         </div>
