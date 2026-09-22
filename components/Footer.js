@@ -121,6 +121,7 @@ export default function Footer() {
               desarrollar soluciones para personas y empresas.
             </p>
 
+            {/* Sitio VEKCIA */}
             <Link
               href="https://vekcia.com"
               target="_blank"
@@ -138,6 +139,104 @@ export default function Footer() {
               Conocer VEKCIA Group
               <span>→</span>
             </Link>
+
+            {/* Redes Sociales */}
+            <div className="mt-8">
+
+              <p className="text-sm text-white/50 mb-4">
+                Síguenos en redes sociales
+              </p>
+
+              <div className="flex items-center gap-3">
+
+                {/* Instagram */}
+                <Link
+                  href="https://www.instagram.com/vekcia.seguros/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram VEKCIA Seguros"
+                  className="
+                    w-11
+                    h-11
+                    rounded-full
+                    border
+                    border-white/15
+                    flex
+                    items-center
+                    justify-center
+                    text-white/70
+                    hover:text-white
+                    hover:bg-[var(--vekcia-green)]
+                    hover:border-[var(--vekcia-green)]
+                    transition-all
+                  "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    className="w-5 h-5"
+                  >
+                    <rect
+                      x="3"
+                      y="3"
+                      width="18"
+                      height="18"
+                      rx="5"
+                    />
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="4"
+                    />
+                    <circle
+                      cx="17.5"
+                      cy="6.5"
+                      r="1"
+                      fill="currentColor"
+                      stroke="none"
+                    />
+                  </svg>
+                </Link>
+
+                {/* Facebook */}
+                <Link
+                  href="https://www.facebook.com/profile.php?id=61594390051687"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook VEKCIA Seguros"
+                  className="
+                    w-11
+                    h-11
+                    rounded-full
+                    border
+                    border-white/15
+                    flex
+                    items-center
+                    justify-center
+                    text-white/70
+                    hover:text-white
+                    hover:bg-[var(--vekcia-green)]
+                    hover:border-[var(--vekcia-green)]
+                    transition-all
+                  "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="w-5 h-5"
+                  >
+                    <path d="M14 8h3V4h-3c-3.3 0-5 2-5 5v3H6v4h3v4h4v-4h3.2l.8-4H13V9c0-.7.3-1 1-1z" />
+                  </svg>
+                </Link>
+
+              </div>
+
+            </div>
+
           </div>
 
         </div>
